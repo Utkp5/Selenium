@@ -32,7 +32,8 @@ public class Task1 {
 			}
 			driver.findElement(By.id("addtocart_2_EnteredQuantity")).clear();
 			driver.findElement(By.id("addtocart_2_EnteredQuantity")).sendKeys("3");
-			
+			driver.findElement(By.id("add-to-cart-button-2")).click();
+
 		}
 		else {
 			System.out.println("not Getting title");
