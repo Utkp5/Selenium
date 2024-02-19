@@ -35,7 +35,8 @@ public class Task1 {
 			driver.findElement(By.id("add-to-cart-button-2")).click();
 
 		}
-		else {
+		else 
+		{
 			System.out.println("not Getting title");
 		}
 		
