@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class DropDown {
 
-	/*  These all are methods of single and multi drop down              */
+	/*  These all are methods of single(1-3) and multi(4-9) drop down although there are 12 but we'll learn only 9             */
 //	    1.	selectByIndex();   
 //	    2.	selectByVisibleText();
 //	    3.	selectByValue();
