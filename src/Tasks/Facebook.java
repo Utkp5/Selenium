@@ -20,7 +20,7 @@ public class Facebook {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@name='lastname']")).sendKeys("Utkarsh");		
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@name='reg_email__']")).sendKeys("9875648598");
+		driver.findElement(By.xpath("//input[@name='reg_email__']")).sendKeys("9875652598");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='password_step_input']")).sendKeys("648598");
 				
