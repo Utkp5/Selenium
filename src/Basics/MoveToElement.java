@@ -17,8 +17,9 @@ public class MoveToElement {
 		Actions act = new Actions(driver);
 		WebElement search_field = driver.findElement(By.id("small-searchterms"));
 		
-		act.moveToElement(search_field).click().click().sendKeys("T-shirts for sale").perform();
+		act.moveToElement(search_field).click().sendKeys("T-shirts for sale").perform();
 		act.keyDown(Keys.TAB).keyDown(Keys.ENTER).build().perform();
+		driver.quit();
 	}
 	
 }
