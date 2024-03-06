@@ -34,15 +34,15 @@ public class Alerts {
 		driver.findElement(By.xpath("//button[@class='btn btn-info']")).click();
 		Alert alt2 = driver.switchTo().alert();
 		Thread.sleep(2000);
-		String actual_text = "Utkarsh pandit";
-		alt2.sendKeys(actual_text);
+		alt2.sendKeys("Utkarsh pandit");
 		alt2.accept();
+		String expected_text = "Hello Utkarsh pandit How are you today";
 		
-		String expected_text = driver.findElement(By.id("demo1")).getText();
+		String actual_text = driver.findElement(By.id("demo1")).getText();
 		
 		if(actual_text.equalsIgnoreCase(expected_text))
 		{
-			System.out.println(expected_text);
+			System.out.println(expected_text + " Test passed!");
 		}
 		else {
 			System.out.println("Failed to get the text!");
