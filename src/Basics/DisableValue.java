@@ -8,25 +8,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Scroll {
+public class DisableValue {
 
 	public static void main(String[] args) {
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("https://www.skillrary.com/");
+		driver.get("https://www.facebook.com/signup");
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebElement hidden_txtfield = driver.findElement(By.xpath("//input[@name='custom_gender']"));
+		js.executeScript("arguments[0].value='Pandit'",hidden_txtfield);
 		
-		//1.    js.executeScript("window.scrollBy(0,1000)");
-   	    //2.	js.executeScript("window.scrollTo(0,1000)");
 		
-		//3. Scroll into view
-		 WebElement target_element = driver.findElement(By.xpath("//h2[text()='Our Services']"));
-		 js.executeScript("arguments[0].scrollIntoView(true);", target_element);
-		
-		 //there is difference between scrollintoview(true) and scrollintoview(false)
 		
 	}
 }
